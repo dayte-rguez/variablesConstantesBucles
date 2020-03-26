@@ -18,6 +18,9 @@ namespace Fase1
 
             //Show the 3 strings concatenated
             Console.WriteLine($"{firtsLastname} {secondLastname}, {name}");
+
+            //Show the 3 int concatenated
+            Console.WriteLine($"{day}/{month}/{year}");
         }
     }
 }
