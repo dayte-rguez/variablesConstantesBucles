@@ -6,25 +6,36 @@ namespace Fase3
     {
         static void Main(string[] args)
         {
-            int i;
             //Show the leap years between 1948 and the birthyear
-            for (i = Constants.firstLeapYear; i <= Constants.birthYear; i += Constants.newLeapYear)
-            {
-                Console.WriteLine($"{i}");
-            }
+            var lastLeap = showLeaps();
 
             //Show if the birthyear is leap
-            var leapBirthYear = false;
-            if (i == Constants.birthYear + Constants.newLeapYear)
+            isBirthyearLeap(lastLeap);
+        }
+
+        private static void isBirthyearLeap(int aLastLeap)
+        {
+            var leapBirthYear = aLastLeap == Constants.birthYear;
+
+            if (leapBirthYear)
             {
-                leapBirthYear = !leapBirthYear;
                 Console.WriteLine($"The birthyear {Constants.birthYear} is leap");
             }
             else
             {
                 Console.WriteLine($"The birthyear {Constants.birthYear} is not leap");
             }
+        }
 
+        private static int showLeaps()
+        {
+            int i;
+            for (i = Constants.firstLeapYear; i <= Constants.birthYear; i += Constants.newLeapYear)
+            {
+                Console.WriteLine($"{i}");
+            }
+
+            return i - Constants.newLeapYear;
         }
     }
     static class Constants
