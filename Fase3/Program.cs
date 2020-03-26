@@ -7,13 +7,13 @@ namespace Fase3
         static void Main(string[] args)
         {
             //Show the leap years between 1948 and the birthyear
-            var lastLeap = showLeaps();
+            var lastLeap = ShowLeaps();
 
             //Show if the birthyear is leap
-            isBirthyearLeap(lastLeap);
+            IsBirthyearLeap(lastLeap);
         }
 
-        private static void isBirthyearLeap(int aLastLeap)
+        private static void IsBirthyearLeap(int aLastLeap)
         {
             var leapBirthYear = aLastLeap == Constants.birthYear;
 
@@ -27,7 +27,7 @@ namespace Fase3
             }
         }
 
-        private static int showLeaps()
+        private static int ShowLeaps()
         {
             int i;
             for (i = Constants.firstLeapYear; i <= Constants.birthYear; i += Constants.newLeapYear)
