@@ -16,14 +16,16 @@ namespace Fase3
         private static void IsBirthyearLeap(int aLastLeap)
         {
             var leapBirthYear = aLastLeap == Constants.birthYear;
+            var isLeap = $"The birthyear {Constants.birthYear} is leap";
+            var isNotLeap = $"The birthyear {Constants.birthYear} is not leap";
 
             if (leapBirthYear)
             {
-                Console.WriteLine($"The birthyear {Constants.birthYear} is leap");
+                Console.WriteLine(isLeap);
             }
             else
             {
-                Console.WriteLine($"The birthyear {Constants.birthYear} is not leap");
+                Console.WriteLine(isNotLeap);
             }
         }
 
@@ -38,6 +40,7 @@ namespace Fase3
             return i - Constants.newLeapYear;
         }
     }
+
     static class Constants
     {
         public const int firstLeapYear = 1948;
