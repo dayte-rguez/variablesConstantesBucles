@@ -15,6 +15,9 @@ namespace Fase1
             var day = 16;
             var month = 1;
             var year = 1983;
+
+            //Show the 3 strings concatenated
+            Console.WriteLine($"{firtsLastname} {secondLastname}, {name}");
         }
     }
 }
