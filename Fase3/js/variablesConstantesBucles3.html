@@ -30,11 +30,13 @@
 
     function IsBirthyearLeap(aLastLeap) {
         var leapBirthYear = aLastLeap == birthYear;
+        var isLeap = `The birthyear ${birthYear} is leap`;
+        var isNotLeap = `The birthyear ${birthYear} is not leap`;
 
         if (leapBirthYear) {
-            console.log(`The birthyear ${birthYear} is leap`);
+            console.log(isLeap);
         } else {
-            console.log(`The birthyear ${birthYear} is not leap`);
+            console.log(isNotLeap);
         }
     }
     //#endregion
