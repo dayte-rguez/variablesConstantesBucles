@@ -6,7 +6,11 @@ namespace Fase2
     {
         static void Main(string[] args)
         {
-            
+            /*Calculate how many leap years are between the created constant 
+              and my birthyear.
+              Operator / only returns the int part of the division*/
+            var birthYear = 1983;
+            var numLeapYear = (birthYear - Constants.firstLeapYear) / Constants.newLeapYear;
         }
     }
 
