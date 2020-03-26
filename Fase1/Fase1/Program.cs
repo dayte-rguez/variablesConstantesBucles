@@ -6,9 +6,15 @@ namespace Fase1
     {
         static void Main(string[] args)
         {
+            //Create 3 string variables for name and lastnames
             var name = "Dayté Dayana";
             var firtsLastname = "Rodríguez";
             var secondLastname = "Martínez";
+
+            //Create 3 int variables with the birthdate
+            var day = 16;
+            var month = 1;
+            var year = 1983;
         }
     }
 }
